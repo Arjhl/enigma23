@@ -1,0 +1,112 @@
+.navbar {
+  display: flex;
+  padding: 2vh 2vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+}
+.logo {
+  height: 7vh;
+  z-index: 10;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  width: 50%;
+}
+.list li {
+  list-style: none;
+  font-size: 1.2em;
+  width: fit-content;
+  padding: 0 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.list li::after {
+  transition: all 2s ease-in-out;
+  display: block;
+  content: "";
+  height: 0.2vh;
+  margin: 0 auto;
+  width: 25%;
+  background-color: transparent;
+}
+
+.list li:hover::after {
+  animation: underline 0.5s 1;
+}
+
+@keyframes underline {
+  0% {
+    background-color: white;
+    width: 25%;
+  }
+  25% {
+    background-color: white;
+    width: 50%;
+  }
+  50% {
+    background-color: white;
+    width: 75%;
+  }
+  100% {
+    background-color: white;
+    width: 90%;
+  }
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .list {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    font-size: 1.4em;
+    padding-left: 10vw;
+    gap: 10px;
+    background-color: black;
+    z-index: 5;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+    /* margin: 0 1vh; */
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .hamburger span {
+    height: 0.3vh;
+    width: 10vw;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  .hamAct {
+    transform: rotate(45deg);
+  }
+  .hamActNeg {
+    transform: rotate(45deg);
+  }
+}

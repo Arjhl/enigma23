@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #f5f5f7;
+  --secondary: #333;
+  --accent: rgb(253, 132, 111);
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--primary);
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "SF Mono Regular";
+}
+@font-face {
+  font-family: mega;
+  src: url("./assets/fonts/Megatron.otf");
+}
+@font-face {
+  font-family: alger;
+  src: url("./assets/fonts/Algerian.ttf");
+}
+h1 {
+  font-family: mega;
+}
+body {
+  background-color: #000;
+}
+@font-face {
+  font-family: "SF Mono Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/cf_urania_rg-webfont.woff2");
+}
+
+#hero {
+  height: 100vh;
+}
+#app {
+  margin: 0 5vw;
+}
+
+@media (max-width: 600px) {
+  #app {
+    margin: 0;
+  }
+  #hero {
+    height: auto;
+  }
+}

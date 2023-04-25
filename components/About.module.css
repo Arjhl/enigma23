@@ -1,0 +1,35 @@
+.about {
+  margin: 10vh 0;
+}
+.about_head {
+  font-size: 3em;
+  font-weight: 800;
+  width: fit-content;
+}
+.about_head::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+}
+.about_content {
+  padding: 2.5vh 0;
+  font-size: 2em;
+}
+.about_content span {
+  color: #2effcc;
+}
+
+@media (max-width: 600px) {
+  .about {
+    margin: 0 5vw;
+  }
+  .about_head {
+    font-size: 2em;
+  }
+  .about_content {
+    font-size: 1.2em;
+    width: 85vw;
+  }
+}

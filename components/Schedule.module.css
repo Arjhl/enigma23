@@ -1,0 +1,100 @@
+/* #2effcc */
+.container {
+  margin: 10vh auto;
+}
+.head {
+  font-size: 3em;
+  font-family: "SF Mono Regular";
+  width: fit-content;
+}
+.head::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+}
+.circle {
+  height: 36px;
+  width: 36px;
+  border: 6px solid #e5e5e5;
+  border-radius: 100px;
+  display: block;
+}
+.line {
+  box-sizing: border-box;
+  height: 58px;
+  width: 6px;
+  border: 2px solid #e5e5e5;
+  margin-top: 5px;
+  margin-left: 15px;
+  display: block;
+  background-color: #e5e5e5;
+}
+.schedule_dates {
+  display: flex;
+  gap: 5vw;
+  cursor: pointer;
+  margin: 5vh 0;
+  position: relative;
+}
+.schedule_dates h3 {
+  font-size: 2.5em;
+  transition: all 0.5s ease-in-out;
+}
+.schedule_time_venue {
+  display: flex;
+  align-items: center;
+}
+.schedule_time_flex {
+  display: flex;
+}
+.schedule_time {
+  padding-left: 2vw;
+  font-size: 2em;
+}
+.active {
+  color: #2effcc;
+}
+.active::after {
+  content: "";
+  height: 0.2vh;
+  display: block;
+  width: 100%;
+  background-color: #2effcc;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-left: 5vw;
+    max-width: 90vw;
+  }
+  .head {
+    margin-top: 5vh;
+    font-size: 2em;
+  }
+  .schedule_dates h3 {
+    font-size: 1.2em;
+  }
+  .circle {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #e5e5e5;
+    border-radius: 100px;
+    display: block;
+  }
+  .line {
+    box-sizing: border-box;
+    height: 5vh;
+    width: 4px;
+    margin: 1vw;
+    margin-top: 2px;
+    /* margin-left: 15px; */
+    display: block;
+    background-color: #e5e5e5;
+  }
+  .schedule_time {
+    font-size: 1.2em;
+    padding-left: 3vw;
+  }
+}
