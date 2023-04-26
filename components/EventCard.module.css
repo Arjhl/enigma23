@@ -1,0 +1,94 @@
+.card {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  background-color: #252525;
+  align-items: center;
+  cursor: pointer;
+  margin: 2vh 0;
+}
+
+.image_div {
+  width: 30vw;
+  height: 30vh;
+  overflow: hidden;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover > .image_div img {
+  transform: scale(1.1);
+}
+
+.content {
+  padding: 2vh 2vw;
+  width: 70vw;
+}
+.title {
+  font-size: 2.5em;
+  padding: 1vh 0;
+}
+.flex_date {
+  display: flex;
+  gap: 1vw;
+  margin: 1vh 0;
+}
+.date {
+  padding: 0.5vh 0.5vw;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1em;
+}
+.venue {
+  padding: 0.5vh 0.5vw;
+  background-color: #2effcc;
+  color: #000;
+  font-size: 1.1em;
+}
+.desc {
+  font-size: 1em;
+  padding: 1vh 0;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.7em;
+  color: white;
+  font-family: "SF Mono Regular";
+  margin: 2vh 0;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  color: #2effcc;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    height: fit-content;
+    margin: 2vh 5vw;
+
+    width: 90vw;
+  }
+  .image_div {
+    width: 100%;
+    padding: 0;
+  }
+  .content {
+    width: 100%;
+    padding: 2vh 4vw;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .desc {
+    font-size: 1.3em;
+  }
+  .btn {
+    font-size: 1.5em;
+  }
+}

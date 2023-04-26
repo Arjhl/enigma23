@@ -13,6 +13,7 @@
 .logo {
   height: 7vh;
   z-index: 10;
+  cursor: pointer;
 }
 .list {
   display: flex;

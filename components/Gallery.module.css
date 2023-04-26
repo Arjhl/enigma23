@@ -1,0 +1,49 @@
+.head {
+  margin-top: 15vh;
+  font-size: 5em;
+  width: fit-content;
+  margin-bottom: 5vh;
+}
+.head::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3vh;
+}
+.card {
+  height: 25vh;
+  width: 20vw;
+  cursor: pointer;
+  overflow: hidden;
+}
+.img {
+  transform: scale(1);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover > .img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .head {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 2em;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 0 5vw;
+    width: 90%;
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 80vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10vh;
+  font-size: 2em;
+}
+span {
+  color: #2effcc;
+  cursor: pointer;
+}
+span:hover {
+  color: #5af2cc;
+}
+@media (max-width: 600px) {
+  .container {
+    font-size: 1.2em;
+    width: 90vw;
+    margin: 0 5vw;
+  }
+}

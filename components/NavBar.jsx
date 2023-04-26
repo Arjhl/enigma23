@@ -37,6 +37,7 @@ const NavBar = () => {
         src="https://malnadtechnicalclub.com/images/mtclogo.png"
         alt="club-logo"
         className={styles.logo}
+        onClick={homeHandler}
       />
       <ul className={`${styles.list} + ${navActive ? styles.active : ""}`}>
         <li onClick={homeHandler}>Home</li>

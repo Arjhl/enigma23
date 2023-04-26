@@ -1,0 +1,51 @@
+i {
+  color: white;
+  font-size: 4em;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 1vh 1vw;
+  text-align: right;
+  width: 100vw;
+  cursor: pointer;
+}
+i:hover {
+  font-size: 4.1em;
+}
+.img img {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+}
+.flex_cont {
+  margin-top: 40vh;
+  background-color: black;
+  display: flex;
+  gap: 10vw;
+  padding: 5vh 5vw;
+  min-height: 100vh;
+}
+.aside p {
+  font-size: 2em;
+  padding: 1vh 0;
+}
+.head {
+  font-size: 5em;
+  width: fit-content;
+}
+.head::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+}
+.subhead {
+  margin: 3vh 0;
+  font-size: 3em;
+}
+.desc {
+  font-size: 1.5em;
+}
