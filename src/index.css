@@ -45,6 +45,10 @@ body {
   margin: 0 5vw;
 }
 
+body {
+  transition: all 0.5s ease-in-out;
+}
+
 @media (max-width: 600px) {
   #app {
     margin: 0;

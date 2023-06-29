@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { useContext } from "react";
 import { EventContext } from "../src/store/event-context";
+import { ScrollRestoration } from "react-router-dom";
 
 const Event = () => {
   const ctx = useContext(EventContext);
@@ -52,6 +53,7 @@ const Event = () => {
         ))}
       </div>
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 };

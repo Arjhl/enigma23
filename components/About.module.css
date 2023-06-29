@@ -2,7 +2,7 @@
   margin: 10vh 0;
 }
 .about_head {
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 800;
   width: fit-content;
 }
@@ -15,7 +15,7 @@
 }
 .about_content {
   padding: 2.5vh 0;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .about_content span {
   color: #2effcc;
@@ -26,10 +26,10 @@
     margin: 0 5vw;
   }
   .about_head {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .about_content {
-    font-size: 1.2em;
+    font-size: 1em;
     width: 85vw;
   }
 }

@@ -1,6 +1,7 @@
 import styles from "./NavBar.module.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../src/assets/images/logo_enigma.png";
 
 const NavBar = () => {
   const nav = useNavigate();
@@ -34,7 +35,7 @@ const NavBar = () => {
   return (
     <nav className={styles.navbar}>
       <img
-        src="https://malnadtechnicalclub.com/images/mtclogo.png"
+        src={logo}
         alt="club-logo"
         className={styles.logo}
         onClick={homeHandler}

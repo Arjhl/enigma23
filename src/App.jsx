@@ -1,9 +1,10 @@
-import styles from "./App.module.css";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import About from "../components/About";
 import Schedule from "../components/Schedule";
 import Footer from "../components/Footer";
+import Sponsors from "../components/Sponsors";
+import { ScrollRestoration } from "react-router-dom";
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
         <Hero />
       </div>
       <About />
-      {/* <Schedule /> */}
+      <Schedule />
+      <Sponsors />
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 }

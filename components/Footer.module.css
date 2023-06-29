@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 .head {
-  font-size: 3em;
+  font-size: 2.8em;
   margin-bottom: 2vh;
   width: fit-content;
 }
@@ -32,21 +32,26 @@
   height: 0.2vh;
 }
 .quick_list li {
-  font-size: 1.5em;
+  font-size: 1.3em;
   cursor: pointer;
   list-style: none;
   transition: all 0.5s ease-in-out;
+  color: #95b1aadd;
 }
 .quick_list li:hover {
+  color: #2effcc;
+}
+.quick_list li a:hover {
   color: #2effcc;
 }
 .quick_list li a {
   text-decoration: none;
   font-size: 1em;
+  color: #95b1aadd;
 }
 .touch {
   margin-top: 5vh;
-  font-size: 3em;
+  font-size: 2.8em;
   width: fit-content;
 }
 .touch::after {
@@ -57,13 +62,14 @@
   height: 0.2vh;
 }
 .social_list {
+  margin-top: 2vh;
   display: flex;
   gap: 5vw;
 }
 .social_list li {
   cursor: pointer;
   padding: 2vh 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
   list-style: none;
   color: #9345ff;
 }
@@ -72,20 +78,21 @@
   color: #9345ff;
   font-size: 1em;
 }
-.social_list li i {
-  font-size: 1.2;
-  color: white;
+.socialLogo {
+  font-size: 1.3em !important;
+  color: white !important;
+  padding-right: 0.5vw;
 }
 .bottom_parent {
   margin-top: 5vh;
   border-top: 1px solid white;
 }
 .bottom {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 3vh 0;
 }
-.bottom i {
-  font-size: 1em;
+.copyright {
+  font-size: 1em !important;
   padding-right: 0.2vw;
 }
 a {
@@ -119,6 +126,9 @@ a {
   }
   .social_list li {
     font-size: 1.2em;
+  }
+  .socialLogo {
+    padding-right: 2vw;
   }
   .bottom {
     font-size: 1em;

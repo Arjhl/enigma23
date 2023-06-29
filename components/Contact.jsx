@@ -1,6 +1,7 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import styles from "./Contact.module.css";
+import { ScrollRestoration } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -9,11 +10,13 @@ const Contact = () => {
       <div className={styles.container}>
         <h2 className={styles.head}>Contact us</h2>
         <div className={styles.card}>
-          <a href="tel:+91 63610 34226" className={styles.contact}>
-            Reon : +91 96200 20541
+          <a href="tel:+91 86187 00053" className={styles.contact}>
+            Reon Julius Rodrigues:
+            <br /> +91 86187 00053
           </a>
           <a href="tel:+91 63610 34226" className={styles.contact}>
-            Manvith : +91 63610 34226
+            Manvith G S:
+            <br /> +91 63610 34226
           </a>
           <a href="mailto:mce.techclub@gmail.com" className={styles.contact}>
             mce.techclub@gmail.com
@@ -21,6 +24,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 };

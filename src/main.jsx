@@ -3,15 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import Event from "../components/Event";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import CtxProvider from "./store/event-context";
 import Team from "../components/Team";
 import SingleEvent from "../components/SingleEvent";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Error from "../components/Error";
+import Workshop from "../components/Workshop";
+import WorkshopDetail from "../components/WorkshopDetail";
+import LazerShowDetail from "../components/LazershowDetail";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -32,7 +35,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/workshops",
-    element: <Error />,
+    element: <Workshop />,
+  },
+  {
+    path: "/workshop/workshopdetail",
+    element: <WorkshopDetail />,
+  },
+  {
+    path: "/workshop/lazershow",
+    element: <LazerShowDetail />,
   },
   {
     path: "/team",
@@ -45,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/*",
+    element: <App />,
   },
 ]);
 

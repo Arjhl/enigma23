@@ -11,10 +11,7 @@ const Error = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.head}>
-        Thank you for visiting our website! We are still in the process of
-        creating an amazing online experience for you. Please excuse our
-        appearance while we work to bring you the best event possible. Stay
-        tuned for updates and announcements!
+        404 Erorr
         <br />
         <span onClick={clickHandler}>GO HOME</span>
       </h2>

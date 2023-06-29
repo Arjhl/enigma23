@@ -1,0 +1,115 @@
+i {
+  color: white;
+  font-size: 3.7em;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 1vh 1vw;
+  text-align: right;
+  width: 100vw;
+  cursor: pointer;
+}
+i:hover {
+  font-size: 3.9em;
+}
+.img img {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
+.flex_cont {
+  margin-top: 40vh;
+  background-color: black;
+  display: flex;
+  /* gap: 5vw; */
+  padding: 5vh 5vw;
+  min-height: 100vh;
+}
+aside {
+  width: 50vw;
+}
+.aside p {
+  width: 100%;
+
+  font-size: 1.3em;
+  padding-bottom: 1vh;
+}
+.head {
+  font-size: 4.6em;
+  width: fit-content;
+}
+.head::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+}
+.subhead {
+  margin: 3vh 0;
+  font-size: 2.8em;
+}
+.desc {
+  font-size: 1.3em;
+}
+.container {
+  /* margin: 0 5vw; */
+  height: auto;
+  width: 100vw;
+}
+.registerButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.registerButton a {
+  font-family: "SF Mono Regular";
+  font-weight: 800;
+  color: #2effcc;
+}
+.registerButton a:hover {
+  color: aliceblue;
+}
+.subheadhead {
+  font-size: 1.2em !important;
+  color: rgb(150, 148, 148);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .img {
+    height: 60vh;
+  }
+  .img img {
+    height: 60vh;
+  }
+  .flex_cont {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  .aside p {
+    font-size: 1.5em;
+  }
+  .head {
+    font-size: 2em;
+  }
+  .subhead {
+    font-size: 1.7em;
+  }
+  .desc {
+    font-size: 1em;
+  }
+  .registerButton a {
+    font-size: 1.8em;
+  }
+  .subheadhead {
+    font-size: 1.1em !important;
+  }
+}

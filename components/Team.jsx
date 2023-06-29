@@ -1,6 +1,6 @@
 import reon from "../src/assets/images/team/REON.jpg";
 import likith from "../src/assets/images/team/likith.jpeg";
-import stuthy from "../src/assets/images/team/Stu.png";
+import stuthy from "../src/assets/images/team/Stu.jpeg";
 import arshil from "../src/assets/images/team/ali.jpg";
 import tejaswini from "../src/assets/images/team/tejaswini.jpg";
 import sampath from "../src/assets/images/team/sampath.jpg";
@@ -25,6 +25,7 @@ import vinit from "../src/assets/images/team/Vinith.jpg";
 
 import styles from "./Team.module.css";
 import NavBar from "./NavBar";
+import { ScrollRestoration } from "react-router-dom";
 import Footer from "./Footer";
 
 const finalYears = [
@@ -41,11 +42,11 @@ const finalYears = [
     img: stuthy,
   },
   {
-    name: "Tejaswini",
+    name: "Tejaswini T S",
     img: tejaswini,
   },
   {
-    name: "Sampathkumar S N",
+    name: "Sampathkumara S N",
     img: sampath,
   },
   {
@@ -161,6 +162,7 @@ const Team = () => {
         })}
       </div>
       <Footer />
+      <ScrollRestoration />
     </div>
   );
 };

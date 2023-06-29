@@ -1,16 +1,14 @@
 import styles from "./Footer.module.css";
 import vid from "../src/assets/images/end.mp4";
 import { useNavigate } from "react-router-dom";
+import rule from "../src/assets/rule-fina.pdf";
+import brochure from "../src/assets/brochure.pdf";
 
 const Footer = () => {
   const nav = useNavigate();
 
   const eventHandler = () => {
     nav("/events");
-  };
-
-  const ruleBookHandler = () => {
-    nav("/error");
   };
 
   const teamHandler = () => {
@@ -40,8 +38,12 @@ const Footer = () => {
           </a>
         </li>
         <li onClick={eventHandler}>Events</li>
-        <li onClick={ruleBookHandler}>Rulebook</li>
-        <li onClick={ruleBookHandler}>Brochure</li>
+        <li>
+          <a href={rule}>Rulebook</a>
+        </li>
+        <li>
+          <a href={brochure}>Brochure</a>
+        </li>
         <li>
           <a href="https://malnadtechnicalclub.com/techsandhya.html">
             Techsandhya
@@ -53,25 +55,34 @@ const Footer = () => {
       <h3 className={styles.touch}>Stay in touch</h3>
       <ul className={styles.social_list}>
         <li>
-          <i className="fa-brands fa-instagram"></i>
+          <section
+            className={`${styles.socialLogo} fa-brands fa-instagram`}
+          ></section>
           <a href="https://www.instagram.com/malnad_technical_club/?igshid=YmMyMTA2M2Y%3D">
             @malnad_technical_club
           </a>
         </li>
         <li>
-          <i className="fa-brands fa-facebook"></i>{" "}
+          <section
+            className={`fa-brands fa-facebook ${styles.socialLogo}`}
+          ></section>
           <a href="https://www.facebook.com/FoundationsMTC">@FoundationsMTC</a>
         </li>
         <li>
-          <i className="fa-brands fa-twitter"></i>{" "}
+          <section
+            className={`${styles.socialLogo} fa-brands fa-twitter`}
+          ></section>
           <a href="https://twitter.com/MalnadTechClub?s=08">@MalnadTechClub</a>
         </li>
       </ul>
 
       <div className={styles.bottom_parent}>
         <p className={styles.bottom}>
-          <i className="fa-regular fa-copyright"></i> Enigma'23 .<br /> Designed
-          and Developed By The Malnad Technical Club 🚀.
+          <section
+            className={`fa-regular fa-copyright ${styles.copyright} `}
+          ></section>{" "}
+          Enigma'23 .<br /> Designed and Developed By The Malnad Technical Club
+          🚀.
         </p>
       </div>
     </div>

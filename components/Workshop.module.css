@@ -1,0 +1,106 @@
+.container {
+  margin-top: 15vh;
+}
+.head {
+  font-size: 3.7em;
+  width: fit-content;
+}
+.head::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+}
+.card {
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  font-size: 2.8em;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #2effcc;
+}
+.card {
+  height: fit-content;
+  margin: 10vh 0;
+}
+.subhead {
+  font-size: 2.2em;
+  padding: 1vh 1vw;
+  width: fit-content;
+  color: #2effcc;
+}
+.subhead::after {
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.2vh;
+  margin-top: 1vh;
+}
+.readBtn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 1vh 1vw;
+  font-size: 2.2em;
+  cursor: pointer;
+  font-family: "SF Mono Regular";
+  transition: all 0.5s ease-in-out;
+}
+.readBtn:hover {
+  color: #2effcc;
+}
+.imgCard {
+  width: 100%;
+
+  margin: 0;
+}
+.imgCard img {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+  margin: 0;
+}
+.card_foot {
+  background-color: #252525;
+  margin: 0;
+  padding: 2vh 0vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .head {
+    font-size: 2.4em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+  }
+
+  .card {
+    margin: 4vh 5vw;
+    width: 90vw;
+  }
+  .card_foot {
+    flex-direction: column;
+    padding: 1vh 1vw;
+  }
+
+  .subhead {
+    font-size: 1.5em;
+  }
+  .subhead::after {
+    display: none;
+  }
+  .readBtn {
+    font-size: 1.3em;
+    text-align: left;
+  }
+}

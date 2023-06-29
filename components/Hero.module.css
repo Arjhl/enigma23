@@ -10,9 +10,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-  height: 85vh;
+  align-items: flex-start;
+  height: 100%;
   width: 40vw;
+  gap: 3vh;
 }
 
 .main_head img {
@@ -20,7 +21,7 @@
 }
 .para {
   padding: 3vh 0;
-  font-size: 2.3em;
+  font-size: 2em;
   text-align: center;
 }
 .countdown {
@@ -34,7 +35,7 @@
   margin-bottom: 0;
 }
 .countdown_head {
-  font-size: 2.5em;
+  font-size: 1.8em;
   padding-bottom: 1vh;
   padding: 1vh 1vw;
   font-weight: 1200;
@@ -54,7 +55,7 @@
 }
 .countdown_value {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 900;
   padding: 0.5vh 0;
 }
@@ -69,9 +70,11 @@
   .para {
     font-size: 1.2em;
     width: 100%;
+    /* border: 2px solid red; */
+    padding: 0;
   }
   .hero_vid {
-    top: 6vh;
+    top: 7vh;
     z-index: 1;
     height: 45vh;
     position: absolute;
@@ -80,12 +83,17 @@
     opacity: 0.8;
   }
   .main_head {
-    margin-top: 25vh;
+    margin-top: 30vh;
     width: 100%;
+    height: 85vh;
     padding: 0;
   }
   .main_head img {
-    height: 10vh;
+    height: 9vh;
+    align-self: center;
+  }
+  .countdown {
+    margin: 0 5vw;
   }
   .countdown_head {
     font-size: 1.5em;

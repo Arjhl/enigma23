@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Hero = () => {
   // Set the date we're counting down to
-  var countDownDate = new Date("June 2, 2023 00:00:00").getTime();
+  var countDownDate = new Date("June 1, 2023 00:00:00").getTime();
 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -43,13 +43,16 @@ const Hero = () => {
         <img src={headImg} alt="" />
         {/* <h2 className={styles.para}>Powered By:</h2> */}
         <div className={styles.countdown}>
-          <h2 className={styles.countdown_head}>ROAD TO ENIGMA'23 :</h2>
+          <h2 className={styles.countdown_head}>Enigma'23 Countdown:</h2>
           <div className={styles.countdown_flex}>
             <div>
               <p className={styles.countdown_value}>
                 {String(days)
                   ?.split()
                   .map((day) => {
+                    if (day < 1) {
+                      return `00`;
+                    }
                     if (day.length > 1) {
                       return day;
                     } else {
@@ -64,6 +67,9 @@ const Hero = () => {
                 {String(hours)
                   ?.split()
                   .map((day) => {
+                    if (day < 1) {
+                      return `00`;
+                    }
                     if (day.length > 1) {
                       return day;
                     } else {
@@ -78,6 +84,9 @@ const Hero = () => {
                 {String(minutes)
                   ?.split()
                   .map((day) => {
+                    if (day < 1) {
+                      return `00`;
+                    }
                     if (day.length > 1) {
                       return day;
                     } else {
@@ -92,6 +101,9 @@ const Hero = () => {
                 {String(seconds)
                   ?.split()
                   .map((day) => {
+                    if (day < 1) {
+                      return `00`;
+                    }
                     if (day.length > 1) {
                       return day;
                     } else {
